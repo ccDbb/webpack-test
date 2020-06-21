@@ -19,26 +19,15 @@ module.exports = {
             { test: /\.js$/,
                 loader: 'babel-loader',
             },
-            // { test: /\.(png|jpe?g|gif|svg)$/,
-            //     loader: 'file-loader',
-            //     options: {
-            //         publicPath:"../dist"
-            //     }
-            // },
             { test: /\.(png|jpe?g|gif|svg)$/,
-                loader: 'url-loader',
+                loader: 'file-loader',
+                options: {
+                    publicPath:"../dist"
+                }
             },
-            {
-                test:/\.(css|sass|less)$/,
-                loader:[
-                    'style-loader',
-                    'css-loader',
-                    'less-loader'
-                ]
-            }
-
-
-
+            // { test: /\.(png|jpe?g|gif|svg)$/,
+            //     loader: 'url-loader',
+            // },
         ]
     },
     plugins:[
