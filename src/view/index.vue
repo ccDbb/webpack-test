@@ -1,5 +1,6 @@
 <template>
     <div >
+        <router-view></router-view>
         <p class="font24-red">
            name: {{name}}
         </p>

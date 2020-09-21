@@ -2,10 +2,12 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const webpack = require('webpack');
+// index: path.resolve(__dirname,'../src/index.js'),
 module.exports = {
+     context:path.resolve(__dirname,'../src'),
     entry:{
-            index: path.resolve(__dirname,'../src/index.js'),
-            page2: path.resolve(__dirname,'../src/page2.js'),
+            index: './index.js'
+           // page2: path.resolve(__dirname,'../src/page2.js'),
         },
     output:{
             path: path.resolve(__dirname,"../dist"),

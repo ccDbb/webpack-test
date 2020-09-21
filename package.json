@@ -2,7 +2,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --config ./build/webpack.config.js",
-    "test": "node ./build/webpack.config.js"
+    "test": "node ./build/webpack.config.js",
+    "dev": "node ./build/webpack.dev.js"
   },
   "dependencies": {
     "babel-loader": "^8.1.0",
@@ -10,8 +11,10 @@
     "sass-loader": "^8.0.2",
     "vue": "^2.6.11",
     "vue-loader": "^15.9.2",
+    "vue-router": "^3.4.3",
     "vue-template-compiler": "^2.6.11",
-    "webpack": "^4.43.0"
+    "webpack": "^4.43.0",
+    "webpack-dev-server": "^3.11.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
